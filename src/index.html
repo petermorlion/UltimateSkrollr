@@ -3,39 +3,40 @@
     <head>
         <title>Ultimate Frisbee explained</title>
         <meta name="description" content="A clear and beautiful explanation of what Ultimate Frisbee is, how it's played, and what's so great about it.">
+        <link rel="stylesheet" type="text/css" href="css/fixed-positioning.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
     </head>
     <body>
-        <h1>Ultimate Frisbee explained</h1>
-        <div>
-            <p>
-                So you've heard about this Ultimate Frisbee thing and want to know what it's all about? 
-                Why does your friend find it so great? Why is your colleague spending her spare time on it?
-                And is it true it's a game without referees?
-            </p>
-        </div>
-        <div>
-            <p>
-                Scroll down to find out!
-            </p>
-        </div>
-        <div>
-            <h2>What do you need?</h2>
-            <p>
-                Not much, just this:
-            </p>
-            <p>
-                Image of a disc
-            </p>
-            <p data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
-                It's called a disc
-            </p>
-        </div>
+        <div id="skrollr-body">
+            <div id="intro" data-100="top:0%" data-500="top:-100%;">
+                <h1>Ultimate Frisbee explained</h1>
+                <p>
+                    So you've heard about this Ultimate Frisbee thing and want to know what it's all about? 
+                    Why does your friend find it so great? Why is your colleague spending her spare time on it?
+                    And is it true it's a game without referees?
+                </p>
+                <p>
+                    Scroll down to find out!
+                </p>
+            </div>
+            <div id="needed" data-100="top:100%" data-500="top:0%;">
+                <h2>What do you need?</h2>
+                <p>
+                    Not much, just this:
+                </p>
+                <div style="width: 100%; top: 40%;" data-500="left:-100%;" data-700="left:10%;">
+                    <img src="img/Disc-320.jpg" alt="Frisbee Disc"><br/>
+                    We call it<span data-700="opacity:1" data-900="opacity:0">...</span>
+                </div>
+                <div style="width: 100%; top: 70%;" data-700="left:100%;" data-900="left:10%;">
+                    <h2>The disc</h2>
+                </div>
+            </div>
         
-        <div class="placeHolder">
-            Placeholder to enable scrolling.
+            <div class="placeHolder">
+                Placeholder to enable scrolling.
+            </div>
         </div>
-
         <script type="text/javascript" src="js/skrollr.min.js"></script>
         <script type="text/javascript">
 	        var s = skrollr.init();

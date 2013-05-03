@@ -1,1 +1,18 @@
-.placeHolder { margin-top: 1000px; }
+body {
+    font-family: Verdana;    
+}
+#intro {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    background-color: #4174ec;
+    color: #FFF;
+}
+#needed{
+    width: 100%;
+    height: 100%;
+    padding: 5% 10%;
+}
+.placeHolder {
+    margin-top: 5000px;
+}
