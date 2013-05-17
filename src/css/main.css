@@ -29,6 +29,9 @@ body {
     width: 50px;
     height: 128px;
 }
+.girl {
+    background-image: url('../img/player-girl-50.gif');
+}
 .disc {
     background-image: url('../img/disc.png');
     background-repeat: no-repeat;
