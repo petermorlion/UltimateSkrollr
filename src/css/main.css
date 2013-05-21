@@ -32,6 +32,12 @@ body {
 .girl {
     background-image: url('../img/player-girl-50.gif');
 }
+.heart {
+    width: 19px;
+    height: 18px;
+    background-image: url('../img/heart.png');
+    background-repeat: no-repeat;
+}
 .disc {
     background-image: url('../img/disc.png');
     background-repeat: no-repeat;
