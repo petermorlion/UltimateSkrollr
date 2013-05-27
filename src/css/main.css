@@ -31,6 +31,14 @@ body {
     height: 128px;
     border-radius: 5px;
 }
+.player-b {
+    background-image: url('../img/player-b-50.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+    height: 128px;
+    border-radius: 5px;
+}
 .heart {
     width: 19px;
     height: 18px;
