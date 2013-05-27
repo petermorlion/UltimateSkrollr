@@ -26,17 +26,17 @@ body {
 .player {
     background-image: url('../img/player-50.gif');
     background-repeat: no-repeat;
+    background-position: center center;
     width: 50px;
     height: 128px;
-}
-.girl {
-    background-image: url('../img/player-girl-50.gif');
+    border-radius: 5px;
 }
 .heart {
     width: 19px;
     height: 18px;
     background-image: url('../img/heart.png');
     background-repeat: no-repeat;
+    background-position: center center;
 }
 .disc {
     background-image: url('../img/disc.png');
@@ -47,7 +47,7 @@ body {
 .pitch{
     height: 284px;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position: center center;
     margin-left: 50px; 
 }
 .football {
