@@ -24,7 +24,6 @@ body {
     color: #FFF;
 }
 .player {
-    background-image: url('../img/player-50.gif');
     background-repeat: no-repeat;
     background-position: center center;
     width: 50px;
@@ -32,7 +31,6 @@ body {
     border-radius: 5px;
 }
 .player-b {
-    background-image: url('../img/player-b-50.gif');
     background-repeat: no-repeat;
     background-position: center center;
     width: 50px;
@@ -61,10 +59,6 @@ body {
 .football {
     width: 200px;
     background-image: url('../img/football-pitch.jpg');
-}
-.ultimate {
-    width: 130px;
-    background-image: url('../img/ultimate-pitch.jpg');
 }
 
 .placeHolder {
