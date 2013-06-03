@@ -61,17 +61,17 @@ body {
     background-image: url('../img/football-pitch.jpg');
 }
 .game-details {
-    top: 150px;
+    top: 144px;
     padding: 10px;
-    background-color: #4cff00;
+    background-image: url('../img/blackboard.jpg');
+    border: 6px solid #7C3E15;
     height: 406px;
     width: 400px;
 }
-.game-details-1 {
-    background-color: #4cff00;
-}
-.game-details-2 {
-    background-color: #4174ec;
+.game-details-text {
+    color: #DBDBDB;
+    font-size: 24px;
+    padding: 20px;
 }
 
 .placeHolder {
