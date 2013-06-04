@@ -69,6 +69,9 @@ body {
 }
 .game-details{
     margin: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
 }
 .game-details-text {
     color: #DBDBDB;
