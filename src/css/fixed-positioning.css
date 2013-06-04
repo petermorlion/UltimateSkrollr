@@ -36,10 +36,3 @@ html, body {
 	 */
 	position:absolute;
 }
-
-.skrollable .skrollable .skrollable {
-	/*
-	 * Third-level (and below) skrollables are positioned static
-	 */
-	position:static;
-}

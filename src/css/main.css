@@ -60,18 +60,25 @@ body {
     width: 200px;
     background-image: url('../img/football-pitch.jpg');
 }
-.game-details {
+.game-details-container {
     top: 144px;
-    padding: 10px;
     background-image: url('../img/blackboard.jpg');
     border: 6px solid #7C3E15;
-    height: 406px;
+    height: 426px;
     width: 400px;
+}
+.game-details{
+    margin: 10px;
 }
 .game-details-text {
     color: #DBDBDB;
     font-size: 24px;
     padding: 20px;
+    width:  340px;
+}
+.game-details-eraser {
+    background-image: url('../img/blackboard.jpg');
+    height:  426px;
 }
 
 .placeHolder {
