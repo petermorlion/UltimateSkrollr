@@ -83,6 +83,12 @@ body {
     background-image: url('../img/blackboard.jpg');
     height:  426px;
 }
+.small-disc {
+    background-color: #ff6a00;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+}
 
 .placeHolder {
     margin-top: 15000px;

@@ -5,6 +5,7 @@
         <meta name="description" content="A clear and beautiful explanation of what Ultimate Frisbee is, how it's played, and what's so great about it.">
         <link rel="stylesheet" type="text/css" href="css/fixed-positioning.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/clippy.css">
     </head>
     <body>
         <div id="skrollr-body-holder">
@@ -88,7 +89,6 @@
                     </div>
                     
                     <div class="heart" data-6000="transform:scale(0)" data-6200="transform:scale(1);top:70%;left:39%;" data-6500="opacity:1" data-6800="opacity:0"></div>
-                    <!-- add easter egg when clicking on heart (clippy?)-->
                 </div>
 
                 <!-- This page comes up together with the page above this. This allows us to move away all the above items, but keeping the pitch in view. -->
@@ -120,6 +120,14 @@
                     <div class="player-b" data-0="display:none" data-5000="display:block;top:-700px;left:625px;background-image: url('./img/player-b-50.gif');" data-5400="top:475px;" data-5900="background-image: url('./img/player-b-girl-50.gif');" data-6500="width: 50px; height: 128px;" data-6800="width:10px; height: 10px;left:240px;"></div>
                     <div class="player-b" data-0="display:none" data-5000="display:block;top:-700px;left:700px;background-image: url('./img/player-b-50.gif');" data-5400="top:475px;" data-6500="width: 50px; height: 128px;" data-6800="width:10px; height: 10px;left:265px;"></div>
 
+                    <div class="small-disc" 
+                         data-7800="display:none; top: 245px; left: 145px;" 
+                         data-7850="display:block;" 
+                         data-7900="display:none;" 
+                         data-7950="display:block;" 
+                         data-8000="display:none" 
+                         data-8050="display:block;"></div>
+
                     <div class="game-details-container" data-6500="left:3000px; width:400px;" data-6800="left:350px;" >
                         <div class="game-details" data-0="display:block;" data-7200="display:none;">
                             <img src="./img/top-arrow-left.png" data-0="position: absolute; top: 70px;" />
@@ -131,8 +139,11 @@
                             <div class="game-details-text" data-0="position: absolute; top: 170px;">These are the end-zones. If you catch a disc here, you score a point.</div>
                             <img src="./img/bottom-arrow-left.png" data-0="position: absolute; top: 310px;" />
                         </div>
-                        <div class="game-details" data-0="display:none;" data-7600="display:block;width:0px;" data-7800="width:400px;">
-                            <div class="game-details-text" data-0="position: absolute; top: 170px;">More stuff</div>
+                        <div class="game-details" data-0="display:none;" data-7600="display:block;width:0px;" data-7800="width:400px;" data-8250="display:none;">
+                            <div class="game-details-text" data-0="position: absolute; top: 170px;">Let's add a disc</div>
+                        </div>
+                        <div class="game-details" data-0="display:none;" data-8250="display:block;width:0px;" data-8350="width:400px;">
+                            <div class="game-details-text" data-0="position: absolute; top: 170px;">The game starts with <strong>the pull</strong></div>
                         </div>
 
                         <div class="game-details-eraser" 
@@ -142,8 +153,10 @@
                              data-7400="display:block;width:0px;"
                              data-7600="width:400px;"
                              data-7601="display:none;"
-                             data-7800="display:block;width:0px;"
-                             data-8000="width:400px;">&nbsp;</div>
+                             data-8100="display:block;width:0px;"
+                             data-8250="width:400px;"
+                             data-8251="display:none;"
+                             >&nbsp;</div>
                     </div>
                 </div>
 
@@ -153,8 +166,20 @@
             </div>
         </div>
         <script type="text/javascript" src="js/skrollr.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> <!-- TODO: update jquery -->
+        <script type="text/javascript" src="js/clippyjs.js"></script>
+        
         <script type="text/javascript">
-	        var s = skrollr.init();
+            var s = skrollr.init();
+
+            $(function () {
+                clippy.load('Merlin', function (agent) {
+                    alert('showing');
+                    agent.show();
+                    alert('showed');
+                });
+            });
 	    </script>
     </body>
 </html>
