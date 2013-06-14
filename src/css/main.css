@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana;    
+    font-family: Helvetica-Neue, Helvetica, Arial;    
     text-align: center;
     margin: 0;
 }
@@ -85,9 +85,6 @@ body {
 }
 .small-disc {
     background-color: #ff6a00;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
 }
 
 .placeHolder {

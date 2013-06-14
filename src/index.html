@@ -121,12 +121,9 @@
                     <div class="player-b" data-0="display:none" data-5000="display:block;top:-700px;left:700px;background-image: url('./img/player-b-50.gif');" data-5400="top:475px;" data-6500="width: 50px; height: 128px;" data-6800="width:10px; height: 10px;left:265px;"></div>
 
                     <div class="small-disc" 
-                         data-7800="display:none; top: 245px; left: 145px;" 
-                         data-7850="display:block;" 
-                         data-7900="display:none;" 
-                         data-7950="display:block;" 
-                         data-8000="display:none" 
-                         data-8050="display:block;"></div>
+                         data-7799="display:none;"
+                         data-7800="display:block; top: 350px; left: 250px; width: 100px; height: 100px; border-radius:50px;"
+                         data-8050="top: 245px; left: 145px; width: 8px; height: 8px; border-radius:4px;"></div>
 
                     <div class="game-details-container" data-6500="left:3000px; width:400px;" data-6800="left:350px;" >
                         <div class="game-details" data-0="display:block;" data-7200="display:none;">
@@ -143,7 +140,15 @@
                             <div class="game-details-text" data-0="position: absolute; top: 170px;">Let's add a disc</div>
                         </div>
                         <div class="game-details" data-0="display:none;" data-8250="display:block;width:0px;" data-8350="width:400px;">
-                            <div class="game-details-text" data-0="position: absolute; top: 170px;">The game starts with <strong>the pull</strong></div>
+                            <div class="game-details-text" data-0="position: absolute; top: 170px;" data-8450="top:170px;" data-8600="top:25px;">
+                                The game starts with <strong>the pull</strong>
+                            </div>
+                            <div class="game-details-text" data-8499="position: absolute; display:none;" data-8500="display:block;top:180px;opacity:0;" data-8700="top:80px;opacity:1;">
+                                This means throwing the disc as far as you can to the other side (without throwing it out of bounds).
+                            </div>
+                            <div class="game-details-text" data-8499="position: absolute; display:none;" data-8500="display:block;top:300px;opacity:0;" data-8700="top:230px;opacity:1;">
+                                Meanwhile, all players take their start positions.
+                            </div>
                         </div>
 
                         <div class="game-details-eraser" 
@@ -175,9 +180,7 @@
 
             $(function () {
                 clippy.load('Merlin', function (agent) {
-                    alert('showing');
                     agent.show();
-                    alert('showed');
                 });
             });
 	    </script>
